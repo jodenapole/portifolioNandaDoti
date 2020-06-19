@@ -1,0 +1,169 @@
+/* Adição da fonte ao arquivo inteiro */
+:root{
+    --black: #000000;
+    --dark-gray: #1c1c1c;
+    --light-gray:#d4d6d5;
+    --white: #ffffff;
+    --dark-blue: #013a49;
+    --petroleum-blue: #00141a;
+}
+
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+/* Retirar rolagem lateral */
+html{
+    overflow-x: hidden;
+}
+
+
+/* FORMATAÇÃO NAVBAR */
+
+/* Espaçamento entre os itens da navbar */
+nav .nav-item{
+    padding: 8px 15px 8px 15px;
+}
+
+div.navbar{
+    padding-left: 0px;
+}
+
+div.navbar a img{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    left: 85px;
+}
+
+/* Cor da navbar */
+nav.navbar-light{
+    background-color: var(--light-gray);
+    height: 70px;
+}
+
+/* Adiciona hover ao dropdown */
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+ .dropdown > .dropdown-toggle:active {
+    /*Sem isso, ao clicar o hover da problema*/
+    pointer-events: none;
+}
+
+
+/* Logo da navbar */
+nav img.logo{
+    width: 110px;
+    margin-left: 149px;
+}
+
+/* Contato rede-social */
+ul.contato-rede-social{
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin-left: 347px;
+    margin-top: 14px;
+}
+
+ul.contato-rede-social li img{
+    width: 25px;
+    height: 25px;
+    margin: 30px;
+}
+
+/* FORMATAÇÃO CARROSEL DE IMAGENS */
+
+div.carousel-inner{
+    height: 100vh;
+    
+}
+
+div.carousel-caption{
+    bottom: 170px!important;
+    color: black!important;
+}
+
+a.carousel-control-prev:hover, a.carousel-control-next:hover{
+    background-color: #1c1c1c99;
+}
+  
+
+
+
+/* FORMATAÇÃO CARDS IMAGENS */
+
+div.card-img{
+    border: none;
+    transition: 300ms;
+}
+
+div.colecao-card-img{
+    margin-top: 50px;
+}
+
+div.card-img img{
+    max-width: 400px;
+    margin: 15px;
+    margin-left: 0px;
+    border-radius: 5px;
+}
+
+/* Formatando as legendas */
+figcaption{
+    position: absolute;
+    top: auto;
+    left: 60px;
+    bottom: 55px;
+    background-color: #1c1c1cbb;
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    opacity: 0;
+    transition: 300ms;
+    transform: translate3d(0px, 23px, -10px);
+    color: white;
+}
+
+figcaption p{
+    margin-top: 95px;
+}
+
+figure:hover figcaption{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+ 
+/* FORMATAÇÃO DOS CARDS INFORMATIVOS*/
+div.col-3{
+    border: none;
+}
+
+/* FORMATAÇÃO FOOTER */
+footer{
+    background-color: var(--light-gray);
+    margin-top: 50px;
+    padding-bottom: 0;
+    
+}
+
+footer img{
+    max-width: 200px;
+     
+}
+
+span.footer{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
